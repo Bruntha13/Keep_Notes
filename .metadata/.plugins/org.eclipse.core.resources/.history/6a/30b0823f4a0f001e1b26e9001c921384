@@ -1,0 +1,17 @@
+package com.dxc.model;
+import java.util.Date;
+import javax.persistence.*
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+@Table(name="USERS")
+public class User {
+
+	@Id
+	private String userId;
+	private String userName;
+	private String userPassword;
+	private String userMobile;
+	private Date userAddedDate;
+}

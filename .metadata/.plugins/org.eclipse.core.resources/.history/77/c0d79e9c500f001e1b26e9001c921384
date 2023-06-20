@@ -1,0 +1,5 @@
+package com.dxc.services;
+
+public interface UserService {
+
+}

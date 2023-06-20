@@ -1,0 +1,30 @@
+package com.dxc.model;
+
+import javax.persistence.*;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="NOTES")
+public class Note {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(nullable=false)
+	private int noteId;
+	
+	@Column(nullable=false)
+	private String noteTitle;
+	
+	@Column(nullable=false)
+	private String noteContent;
+	
+	@Column(nullable=false)
+	private String noteStatus;
+	
+	@Column(nullable=false)
+	private String noteCreatedAt;
+	
+	@Column(nullable=false)
+	private String createdBy;
+
+}
